@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="知命AI">
+  <rect width="512" height="512" rx="96" fill="#1d1d1f"/>
+  <circle cx="256" cy="256" r="166" fill="none" stroke="#bd8b2c" stroke-width="18"/>
+  <circle cx="256" cy="256" r="112" fill="none" stroke="#f3d38a" stroke-width="8" opacity="0.82"/>
+  <path d="M156 178h200v36H156zM196 150h40v214h-40zM276 150h40v214h-40z" fill="#ffffff"/>
+  <path d="M164 292h184v38H164z" fill="#ffffff"/>
+  <path d="M182 386c38-30 61-69 70-117h42c-9 65-42 118-91 155z" fill="#f3d38a"/>
+</svg>
