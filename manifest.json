@@ -1,0 +1,19 @@
+{
+  "name": "知命AI｜命理人生推演助手",
+  "short_name": "知命AI",
+  "description": "用传统命理文化结合 AI 报告结构，生成体验版自我认知报告。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
