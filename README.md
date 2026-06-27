@@ -1,31 +1,56 @@
-# 会算账｜老板财税小管家
+# 知命AI｜命理人生推演助手
 
-## 安装
+这是一个可部署的静态网页第一版，只包含 HTML、CSS、JavaScript，不接后端、不登录、不支付、不保存用户数据。
 
-```bash
-cd /Users/mr/Documents/移动/huisuanzhang-geo-site
-export PATH=/Users/mr/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:$PATH
-/Users/mr/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/pnpm install
-```
+## 文件
 
-## 运行
+- `index.html`：单页网站、样式和交互逻辑
+- `manifest.json`：PWA 基础配置
+- `sw.js`：基础离线缓存
+- `icon.svg`：站点图标
+- `README.md`：项目说明
 
-```bash
-export PATH=/Users/mr/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:$PATH
-/Users/mr/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/pnpm dev
-```
+## 本地预览
 
-默认地址：`http://127.0.0.1:8766/`
-
-## 构建
+直接用浏览器打开 `index.html` 即可。也可以在当前目录启动静态服务：
 
 ```bash
-export PATH=/Users/mr/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin:$PATH
-/Users/mr/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/pnpm build
+python3 -m http.server 8080
 ```
 
-## 说明
+然后访问：
 
-- 第一版为静态官网
-- 已包含 7 个页面
-- 后续可继续扩展后台、文章系统和客户表单
+```text
+http://localhost:8080
+```
+
+## 功能范围
+
+- 首页首屏
+- 流程说明
+- 报告模块说明
+- 隐私说明
+- 免责声明
+- 测算表单
+- 体验版报告结果
+- 复制报告文字
+- 打印 / 保存 PDF
+- 手机端底部固定“开始测算”按钮
+
+## 部署
+
+可上传到 GitHub Pages、Vercel、Netlify 或普通静态网站服务器。上传时保持这 5 个文件在同一目录即可。
+
+## 测试重点
+
+- 点击“开始体验测算”能跳转到表单
+- 选择测算方向能高亮
+- 填写表单后能生成报告
+- 复制报告文字按钮可用
+- 打印 / 保存 PDF 按钮可用
+- 手机端底部固定按钮不遮挡主要内容
+- 微信内置浏览器、iPhone Safari、安卓 Chrome、华为浏览器中页面可正常打开
+
+## 当前边界
+
+体验版只在当前浏览器页面中生成报告，不连接服务器，不上传、不保存用户数据。本内容仅作传统文化兴趣参考、自我认知和问题整理使用，不作为现实重大决策的唯一依据。
